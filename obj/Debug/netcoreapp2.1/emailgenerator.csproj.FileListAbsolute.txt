@@ -1,0 +1,11 @@
+C:\Users\Nick\Desktop\emailgenerator\bin\Debug\netcoreapp2.1\emailgenerator.deps.json
+C:\Users\Nick\Desktop\emailgenerator\bin\Debug\netcoreapp2.1\emailgenerator.runtimeconfig.json
+C:\Users\Nick\Desktop\emailgenerator\bin\Debug\netcoreapp2.1\emailgenerator.runtimeconfig.dev.json
+C:\Users\Nick\Desktop\emailgenerator\bin\Debug\netcoreapp2.1\emailgenerator.dll
+C:\Users\Nick\Desktop\emailgenerator\bin\Debug\netcoreapp2.1\emailgenerator.pdb
+C:\Users\Nick\Desktop\emailgenerator\obj\Debug\netcoreapp2.1\emailgenerator.csprojAssemblyReference.cache
+C:\Users\Nick\Desktop\emailgenerator\obj\Debug\netcoreapp2.1\emailgenerator.csproj.CoreCompileInputs.cache
+C:\Users\Nick\Desktop\emailgenerator\obj\Debug\netcoreapp2.1\emailgenerator.AssemblyInfoInputs.cache
+C:\Users\Nick\Desktop\emailgenerator\obj\Debug\netcoreapp2.1\emailgenerator.AssemblyInfo.cs
+C:\Users\Nick\Desktop\emailgenerator\obj\Debug\netcoreapp2.1\emailgenerator.dll
+C:\Users\Nick\Desktop\emailgenerator\obj\Debug\netcoreapp2.1\emailgenerator.pdb

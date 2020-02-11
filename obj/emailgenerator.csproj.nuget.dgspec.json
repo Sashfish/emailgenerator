@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Nick\\Desktop\\emailgenerator\\emailgenerator.csproj": {}
+    "C:\\Users\\Nick\\Desktop\\emailgenerator\\emailgenerator.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Nick\\Desktop\\emailgenerator\\emailgenerator.csproj": {
+    "C:\\Users\\Nick\\Desktop\\emailgenerator\\emailgenerator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Nick\\Desktop\\emailgenerator\\emailgenerator.csproj",
+        "projectUniqueName": "C:\\Users\\Nick\\Desktop\\emailgenerator\\emailgenerator.csproj",
         "projectName": "emailgenerator",
-        "projectPath": "c:\\Users\\Nick\\Desktop\\emailgenerator\\emailgenerator.csproj",
+        "projectPath": "C:\\Users\\Nick\\Desktop\\emailgenerator\\emailgenerator.csproj",
         "packagesPath": "C:\\Users\\Nick\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Nick\\Desktop\\emailgenerator\\obj\\",
+        "outputPath": "C:\\Users\\Nick\\Desktop\\emailgenerator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
