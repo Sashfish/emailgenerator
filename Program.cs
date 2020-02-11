@@ -10,39 +10,52 @@ namespace emailgenerator
             while (1==1)
             {
             string dir = Directory.GetCurrentDirectory();
-            dir.Replace(@"\", @"/");
-            dir += "/prefs.txt";
+            dir = dir.Replace(@"\", @"/");
+            string prefs = dir + "/prefs.txt";
             Console.WriteLine("Select from the following options");
             Console.WriteLine("----------------------------------");
             Console.WriteLine("1 Write an email");
             Console.WriteLine("2 View current preferences");
             Console.WriteLine("3 Change preferences");
             Console.WriteLine("4 Exit");
+
+            StreamReader sr = new StreamReader(prefs);
+            string line = sr.ReadLine();
+            int ai = line.IndexOf("]");
+            ai++;
+            string addressee = line.Substring(ai);
+            line = sr.ReadLine();
+            int si = line.IndexOf("]");
+            si++;
+            string sign = line.Substring(si);
+            sr.Close();
+
+
             string input = Console.ReadLine();
             try {
             switch (input)
             {
-                case "1":
-                    //xxxxx
+                case "1":            
+                    Console.WriteLine("Please enter the body of the email");
+                    string body = Console.ReadLine();
+                    Console.WriteLine("Generating the email using your preferences");
+                    string email = ($"{addressee}, \n{body}. \nKind regards,\n{sign}.");
+                    string emailPath = dir + "/completed_email.txt";
+                    Console.WriteLine(emailPath);
+                    StreamWriter swEmail = new StreamWriter(emailPath);
+                    swEmail.WriteLine(email);
+
+                    swEmail.Close();
+                    Console.WriteLine("Your email has been saved to completed_email.txt - enjoy");
                     break;
                 case "2":
-                    StreamReader sr = new StreamReader(dir);
-                    string line = sr.ReadLine();
-                    int ai = line.IndexOf("]");
-                    ai++;
-                    string addressee = line.Substring(ai);
                     Console.WriteLine($"Your current addressee is {addressee}");
-                    line = sr.ReadLine();
-                    int si = line.IndexOf("]");
-                    si++;
-                    string sign = line.Substring(si);
                     Console.WriteLine($"Your current signature is {sign}");
-                    sr.Close();
                     break;
                 case "3":
                     Console.WriteLine("Please enter your default addressee (i.e. To whom it may concern)");
                     string addressee2 = Console.ReadLine();
-                    StreamWriter sr2 = new StreamWriter(dir);
+                    StreamWriter sr2 = new StreamWriter(prefs);
                     sr2.WriteLine($"[addressee]{addressee2}");
 
                     Console.WriteLine("Please enter your signature (i.e. Jack Johnson)");
